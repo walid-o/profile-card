@@ -96,4 +96,47 @@ body {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
 
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+.snap-section {
+  margin-top: 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snap-section {
+  margin-top: 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snap-img {
+  width: 15
+  0px;
+  aspect-ratio: 1 / 1; 
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.snap-img.expanded {
+  width: 90px; 
+  aspect-ratio: 0.5/ 1;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+}
